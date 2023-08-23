@@ -5,7 +5,7 @@ const MyOrder = () => {
 
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("userEmail"));
-    await fetch("http://localhost:5000/api/myOrderData", {
+    await fetch("https://mern-food-r56k.vercel.app/api/myOrderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
