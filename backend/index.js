@@ -15,7 +15,7 @@ mongoDB()
   next();
 })*/
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://mern-food-three.vercel.app',
   optionsSuccessStatus: 200 
 }
 app.use(cors(corsOptions))
