@@ -3,7 +3,7 @@ const mongoDB = require('./db')
 
 const cors = require('cors')
 const app = express()
-const port = 5000
+const port = 'https://mern-food-three.vercel.app' || 5000
 
 mongoDB()
 /*app.use((req, res, next)=>{
@@ -15,7 +15,7 @@ mongoDB()
   next();
 })*/
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://mern-food-three.vercel.app',
   optionsSuccessStatus: 200 
 }
 app.use(cors(corsOptions))
