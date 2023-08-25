@@ -6,14 +6,14 @@ const app = express()
 const port = process.env.PORT || 5000
 
 mongoDB()
-/*app.use((req, res, next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
+app.use((req, res, next)=>{
+  res.setHeader("Access-Control-Allow-Origin","https://go-food-x2wl.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
-})*/
+})
 const corsOptions = {
   origin: 'https://go-food-x2wl.vercel.app',
   optionsSuccessStatus: 200 
