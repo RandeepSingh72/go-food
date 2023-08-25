@@ -102,7 +102,6 @@ const Home = () => {
       </div>
       <div className="container">
         {foodCat !== []
-            console.log(foodCat)
           ? foodCat.map((data) => {
               return (
                 <div className="row mb-3">
