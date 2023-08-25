@@ -15,7 +15,7 @@ mongoDB()
   next();
 })*/
 const corsOptions = {
-  origin: 'https://mern-food-cazo.vercel.app',
+  origin: 'https://go-food-x2wl.vercel.app',
   optionsSuccessStatus: 200 
 }
 app.use(cors(corsOptions))
