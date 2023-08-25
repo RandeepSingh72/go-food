@@ -7,7 +7,7 @@ const Login = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    const response = await fetch("https://mern-food-r56k.vercel.app/api/loginuser", {
+    const response = await fetch("https://go-food-liard.vercel.app/api/loginuser", {
       method: 'POST',
       headers:{
         "Content-Type":"application/json"

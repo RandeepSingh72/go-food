@@ -7,7 +7,7 @@ const Home = () => {
   const [foodItem, setFoodItem] = useState([]);
 
   const loadData = async () => {
-    let response = await fetch("https://mern-food-r56k.vercel.app/api/foodData", {
+    let response = await fetch("https://go-food-liard.vercel.app/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

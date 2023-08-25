@@ -14,7 +14,7 @@ const Cart = () => {
   }
   const handleCheckOut = async () => {
     const userEmail = localStorage.getItem('userEmail');
-    const response = await fetch('https://mern-food-r56k.vercel.app/api/orderData',{
+    const response = await fetch('https://go-food-liard.vercel.app/api/orderData',{
       method:'POST',
       headers:
       {
