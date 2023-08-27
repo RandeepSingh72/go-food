@@ -8,9 +8,9 @@ const port = process.env.PORT || 5000
 mongoDB()
 app.use((req, res, next)=>{
   res.setHeader("Access-Control-Allow-Origin","https://go-food-x2wl.vercel.app");
-  res.header(
+  res.setHeader(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept, Accept-Version, Content-Length"
   );
   next();
 })
