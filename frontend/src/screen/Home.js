@@ -7,16 +7,15 @@ const Home = () => {
   const [foodItem, setFoodItem] = useState([]);
 
   const loadData = async () => {
-    let response = await fetch("https://go-food-liard.vercel.app/api/foodData", {
+    const response = await fetch("https://go-food-liard.vercel.app/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
     });
-    response = await response.json();
-    setFoodItem(response[0]);
-    setFoodCat(response[1]);
-     console.log(response[0], response[1]);
+    const data = await response.json();
+    setFoodItem(data[0]);
+    setFoodCat(data[1]);
   };
 
   useEffect(() => {
