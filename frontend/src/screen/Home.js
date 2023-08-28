@@ -101,7 +101,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container">
-        {foodCat !== []
+        {foodCat && foodCat !== []
           ? foodCat.map((data) => {
               return (
                 <div className="row mb-3">
@@ -109,7 +109,7 @@ const Home = () => {
                     {data.CategoryName}
                   </div>
                   <hr />
-                  {foodItem !== [] ? (
+                  {foodItem && foodItem !== [] ? (
                     foodItem
                       .filter((item) => (item.CategoryName === data.CategoryName) && (item.name.toLowerCase().includes(search.toLocaleLowerCase())))
                       .map((filterItems) => {
