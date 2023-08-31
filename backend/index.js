@@ -1,9 +1,8 @@
 const express = require('express')
-const mongoDB = require('./db')
 const cors = require('cors')
 const app = express()
 const port = process.env.PORT || 5000
-mongoDB()
+
 app.use((req, res, next)=>{
   res.setHeader("Access-Control-Allow-Origin","https://go-food-x2wl.vercel.app");
   res.setHeader(
