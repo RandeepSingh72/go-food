@@ -6,7 +6,7 @@ const MyOrder = () => {
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("userEmail"));
     await fetch("https://go-food-liard.vercel.app/api/myOrderData", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
