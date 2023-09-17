@@ -8,7 +8,7 @@ const Home = () => {
 
   const loadData = async () => {
     const response = await fetch("https://go-food-liard.vercel.app/api/foodData", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
